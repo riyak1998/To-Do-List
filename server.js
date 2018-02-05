@@ -2,8 +2,9 @@ const express = require('express');
 const app=express();
 const bodyParser = require('body-parser');
 const file=require('fs');
+var port=process.env.PORT || 8080;
 var todo=[];
-app.listen('4000',function(err){
+app.listen(port,function(err){
   if(err) throw err;
   console.log("server is running");
 })
